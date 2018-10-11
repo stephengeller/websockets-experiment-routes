@@ -24,7 +24,7 @@ router.post("/main", [
 });
 
 router.get("/main", (req, res) => {
-    res.redirect('/rooms', 200)
+    res.redirect('/rooms')
 });
 
 const renderUserAndRoom = (res, view, user, room, errorJSON) => {
