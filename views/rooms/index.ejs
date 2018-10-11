@@ -4,8 +4,12 @@
     <h1>FutureChat</h1>
     <h3>Where the memes are always dank.</h3>
     <form action="/rooms/main" method="POST">
-        <label for="user-name">Enter name: </label>
-        <input id="user-name" type="text" placeholder="Enter name here..." name="userName">
+        <label for="user-name">Enter user-name: </label>
+        <input id="user-name" type="text" placeholder="Enter name here..." name="userName" value="<%= locals.userName ? userName : '' %>">
+        <br/>
+        <label for="room-name">Enter room-name: </label>
+        <input id="room-name" type="text" placeholder="Enter room here..." name="roomName" value="<%= locals.roomName ? roomName : '' %>">
+        <br/>
         <input type="submit" id="join-room-button" value="Join Room!">
     </form>
 </div>
@@ -14,4 +18,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<% include ../partials/header %>
+<% include ../partials/footer %>
