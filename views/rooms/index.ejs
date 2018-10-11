@@ -3,9 +3,10 @@
 <div class="container">
     <h1>FutureChat</h1>
     <h3>Where the memes are always dank.</h3>
-    <form>
-        <input type="text" placeholder="Enter name here...">
-        <input id="join-room-button" type="button" value="Join Room!" onclick="">
+    <form action="/rooms/join" method="post">
+        <label for="user-name">Enter name: </label>
+        <input id="user-name" type="text" placeholder="Enter name here...">
+        <input type="submit" id="join-room-button" value="Join Room!" onclick="">
     </form>
 </div>
 <script type="text/javascript" src="js/rooms/index.js"></script>
